@@ -114,6 +114,20 @@ files = [
 ]
 
 [[package]]
+name = "dotenv"
+version = "0.9.9"
+description = "Deprecated package"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "dotenv-0.9.9-py2.py3-none-any.whl", hash = "sha256:29cf74a087b31dafdb5a446b6d7e11cbce8ed2741540e2339c69fbef92c94ce9"},
+]
+
+[package.dependencies]
+python-dotenv = "*"
+
+[[package]]
 name = "filelock"
 version = "3.18.0"
 description = "A platform independent file lock."
@@ -274,6 +288,33 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "virtualenv"]
 
 [[package]]
+name = "pytest-integration"
+version = "0.2.3"
+description = "Organizing pytests by integration or not"
+optional = false
+python-versions = ">=3.6"
+groups = ["dev"]
+files = [
+    {file = "pytest_integration-0.2.3-py3-none-any.whl", hash = "sha256:7f59ed1fa1cc8cb240f9495b68bc02c0421cce48589f78e49b7b842231604b12"},
+    {file = "pytest_integration-0.2.3.tar.gz", hash = "sha256:b00988a5de8a6826af82d4c7a3485b43fbf32c11235e9f4a8b7225eef5fbcf65"},
+]
+
+[[package]]
+name = "python-dotenv"
+version = "1.0.1"
+description = "Read key-value pairs from a .env file and set them as environment variables"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = [
+    {file = "python-dotenv-1.0.1.tar.gz", hash = "sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca"},
+    {file = "python_dotenv-1.0.1-py3-none-any.whl", hash = "sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a"},
+]
+
+[package.extras]
+cli = ["click (>=5.0)"]
+
+[[package]]
 name = "pyyaml"
 version = "6.0.2"
 description = "YAML parser and emitter for Python"
@@ -403,5 +444,5 @@ test = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "coverage-enable-subprocess
 
 [metadata]
 lock-version = "2.1"
-python-versions = ">=3.12"
-content-hash = "e4d1e5f8d9fe0c4a2f4dbf2eb935af969cdf30408169852826e75eeb6ed2cef7"
+python-versions = ">=3.12,<4"
+content-hash = "070baa1d31d1364cd5b35d1166109112992bc26db01ccf32ce936f9c62f3f659"

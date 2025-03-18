@@ -6,7 +6,7 @@ authors = [
     {name = "PleaseMePython",email = "Please.Me.Python@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<4"
 
 
 [tool.poetry]
@@ -18,11 +18,18 @@ ruff = "^0.11.0"
 pre-commit = "^4.1.0"
 pytest = "^8.3.5"
 pytest-cov = "^6.0.0"
+pytest-integration = "^0.2.3"
 
 
 [tool.poetry.dependencies]
 redis = "^5.2.1"
 python-dotenv = "^1.0.1"
+dotenv = "^0.9.9"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
